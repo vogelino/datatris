@@ -1,0 +1,20 @@
+{
+  "name": "datatris",
+  "version": "1.0.0",
+  "description": "A building kit for social data research",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "social data reseach",
+    "pattern",
+    "building kit",
+    "data anlysis",
+    "FH Potsdam"
+  ],
+  "author": "Lucas Vogel <contact@vogelino.com> (http://vogelino.com/)",
+  "contributors": [
+  ], 
+  "license": "MIT"
+}

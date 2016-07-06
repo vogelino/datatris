@@ -1,10 +1,11 @@
 {
   "name": "datatris",
-  "version": "1.0.0",
   "description": "A building kit for social data research",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha ./test/**/*.spec.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "social data reseach",
@@ -14,7 +15,22 @@
     "FH Potsdam"
   ],
   "author": "Lucas Vogel <contact@vogelino.com> (http://vogelino.com/)",
-  "contributors": [
-  ], 
-  "license": "MIT"
+  "contributors": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vogelino/datatris.git"
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.1",
+    "cz-conventional-changelog": "^1.1.6",
+    "expect": "^1.20.1",
+    "mocha": "^2.5.3",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

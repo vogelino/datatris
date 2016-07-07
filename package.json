@@ -2,9 +2,13 @@
   "name": "datatris",
   "description": "A building kit for social data research",
   "main": "index.js",
+  "engines": {
+    "node": ">=6.2.0",
+    "npm": ">=3.8.9"
+  },
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha ./test/**/*.spec.js",
+    "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
@@ -22,6 +26,8 @@
     "url": "https://github.com/vogelino/datatris.git"
   },
   "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
     "commitizen": "^2.8.1",
     "cz-conventional-changelog": "^1.1.6",
     "expect": "^1.20.1",
@@ -32,5 +38,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "dependencies": {}
 }

@@ -1,3 +1,5 @@
+/*global describe*/
+/*global it*/
 import containsCharacter from '../../src/atoms/containsCharacter';
 import expect from 'expect';
 
@@ -23,13 +25,13 @@ describe('containsCharacter', () => {
 
 	it('should throw an error if given character is not a string', () => {
 		const character = true;
-		const expected = () => containsCharacter('string', character)
+		const expected = () => containsCharacter('string', character);
 		expect(expected).toThrow(/CHARACTER_NOT_A_STRING/);
 	});
 
 	it('should return true if the character is contained', () => {
 		const character = 'a';
-		const expected = containsCharacter('abc', character)
+		const expected = containsCharacter('abc', character);
 		expect(expected).toEqual(true);
 	});
 
